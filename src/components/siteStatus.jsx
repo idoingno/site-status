@@ -107,7 +107,7 @@ const SiteStatus = ({ siteData, days, status }) => {
                   </div>
                   <div className="summary">
                     <div className="day">
-                      {site.daily[site.daily.length - 1].date.format(
+                      {site.daily[0].date.format(
                         "YYYY-MM-DD"
                       )}
                     </div>
