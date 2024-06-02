@@ -32,7 +32,7 @@ const SiteStatus = ({ siteData, days, status }) => {
         {status.siteState !== "wrong" ? (
           status.siteState !== "loading" && siteData ? (
             <div className="sites">
-              {siteData.map((site) => (
+              {siteData.reverse().map((site) => (
                 <div
                   key={site.id}
                   className={`site ${
